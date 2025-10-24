@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { mockPackages } from "@/lib/mockData";
 
+// ✅ Static paths for build-time generation
 export async function generateStaticParams() {
   return mockPackages.map((pkg) => ({
     id: pkg.id.toString(),
@@ -122,7 +123,7 @@ export default async function PackageDetailPage({ params }) {
             <div className="mb-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">Itinerary</h2>
               <div className="space-y-4">
-                {pkg.route.map((day, index) => (
+                {pkg.destinations.map((day, index) => (
                   <div key={index} className="border-l-4 border-[#465b2d] pl-4 py-2">
                     <div className="flex items-center mb-1">
                       <span className="font-bold text-[#465b2d] mr-3">
@@ -167,7 +168,7 @@ export default async function PackageDetailPage({ params }) {
             <div className="mb-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">Gallery</h2>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {pkg.gallery.map((img, index) => (
+                {pkg.gallery?.map((img, index) => (
                   <div
                     key={index}
                     className="aspect-square overflow-hidden rounded-lg"
