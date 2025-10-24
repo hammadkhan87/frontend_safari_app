@@ -135,7 +135,7 @@ export default function ParksLayout() {
               <h2 className="text-sm font-semibold text-gray-800 mb-3 uppercase tracking-wide">Parks List</h2>
               
               {/* Minimal Parks List - Only Names */}
-              <div className="space-y-2">
+              <div className="space-y-1">
                 {parks.map((park, index) => (
                   <div 
                     key={index}
@@ -149,6 +149,19 @@ export default function ParksLayout() {
                     {park.name}
                   </div>
                 ))}
+                <button className="flex items-center gap-2 border  text-gray-600 text-sm px-1 py-2  rounded-md hover:bg-blue-50 hover:text-[#465b2d] transition-all duration-300">
+  All 15 Parks & Reserves
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    className="w-4 h-4"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+  </svg>
+</button>
               </div>
             </div>
           </div>
@@ -189,7 +202,7 @@ export default function ParksLayout() {
                       {parks[selectedPark].name}
                     </h1>
                     
-                    <p className="text-white/90 text-base lg:text-lg leading-relaxed max-w-3xl mb-6">
+                    <p className="text-white/90 text-base mt-2 lg:text-lg leading-relaxed max-w-3xl mb-6">
                       {parks[selectedPark].description}
                     </p>
 

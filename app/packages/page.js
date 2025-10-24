@@ -448,8 +448,35 @@ const PackageListing = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-6 sm:py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 ">
+     <div
+  className="relative min-h-[50vh] flex flex-col justify-center items-center text-center bg-cover bg-center"
+  style={{
+    backgroundImage: "url('https://cdn-ajfhi.nitrocdn.com/KGztweKcUtUgsFQkUHxObgZRMXOaBfJI/assets/images/optimized/rev-e4b7f67/tanzania-specialist.com/wp-content/uploads/2025/02/DSC_1116-1960x800.jpg')", // replace with your image path
+  }}
+>
+  {/* Overlay for readability */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+
+  {/* Text content */}
+  <div className="relative z-10 max-w-3xl px-6">
+    <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-4 tracking-wide">
+      TANZANIA SAFARI
+    </h1>
+    <p className="text-white/90 text-sm md:text-lg leading-relaxed">
+      A Tanzania safari is a once-in-a-lifetime experience. From the wild
+      natural landscapes to the magnificent animals that roam the land,
+      Tanzania is a destination for those looking for adventure like no other.
+      Our tailor-made safaris allow you to enjoy every moment. Get in touch
+      with our travel consultants.They’ll be happy to customize your trip!
+    </p>
+  </div>
+
+  {/* Icons on right side */}
+</div>
+
+     
+      <div className="max-w-7xl mx-auto py-6 sm:py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
         <div className="lg:hidden mb-6">
           <button
             onClick={() => setMobileFiltersOpen(true)}
@@ -721,9 +748,9 @@ const PackageListing = () => {
           <div className="flex-1 min-w-0">
             <div className="mb-6 sm:mb-8">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#465b2d] mb-3">Our Safari Packages</h1>
-              <p className="text-sm sm:text-base text-gray-600 mb-4">
+              {/* <p className="text-sm sm:text-base text-gray-600 mb-4">
                 Discover our range of meticulously crafted Tanzania safari experiences
-              </p>
+              </p> */}
               <div className="inline-flex items-center">
                 <span className="bg-blue-100 text-blue-800 text-xs sm:text-sm px-3 py-1.5 rounded-full font-medium">
                   {filteredPackages.length} packages found

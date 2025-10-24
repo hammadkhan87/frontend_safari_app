@@ -383,7 +383,7 @@ const mainNavItems = [
       name: 'SAMPLE ITINERARIES', 
       type: 'panel'
     },
-    { name: 'SAFARIS', href: '/safaris' },
+    { name: 'SAFARIS', href: '/packages' },
     { name: 'KILIMANJARO', href: '/kilimanjaro' },
     { name: 'ZANZIBAR', href: '/zanzibar' },
     { 
