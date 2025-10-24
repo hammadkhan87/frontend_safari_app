@@ -1,7 +1,7 @@
 // components/Footer.js
 "use client"
 import { useState } from 'react';
-import logo from "../public/logosvg.svg"
+import logo from "../../public/logosvg.svg"
 
 const Footer = () => {
   return (
@@ -48,7 +48,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="mb-4">
-            <p className="text-sm">© 2025 Tanzania Specialist B.V.</p>
+            <p className="text-sm">© 2025 Asili Explorer</p>
           </div>
 
           {/* Links */}

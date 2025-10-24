@@ -62,7 +62,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Form */}
-          <div className="w-full max-w-md bg-white/15 mr-5 backdrop-blur-md rounded-2xl border border-white/25 shadow-2xl p-5 sm:p-6">
+          <div className="w-full max-w-md bg-white/15 mr-5 backdrop-blur-md rounded-xl border border-white/25 shadow-2xl p-5 sm:p-6">
             <h2 className="text-lg md:text-xl font-bold text-center text-white mb-4 tracking-wide">
               LET'S PLAN YOUR DREAM TRIP TOGETHER!
             </h2>

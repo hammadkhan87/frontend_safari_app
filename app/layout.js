@@ -1,15 +1,14 @@
 // frontend/app/layout.js
-import { Roboto } from 'next/font/google'; // Import Roboto from next/font/google
+import { Roboto } from "next/font/google";
 import "./globals.css";
-import Header from '@/_components/Header';
-import Footer from '@/_components/Footer';
+import Header from "@/app/_components/Header";
+import Footer from "@/app/_components/Footer";
 
-// Configure the Roboto font
 const roboto = Roboto({
-  weight: ['100', '300', '400', '500', '700', '900'], // Include necessary weights
-  style: ['normal', 'italic'], // Include necessary styles if needed
-  subsets: ['latin'], // Include necessary subsets
-  variable: '--font-roboto', // Define the CSS variable name
+  weight: ["100", "300", "400", "500", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
 });
 
 export const metadata = {
@@ -20,12 +19,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* Apply the Roboto font variable to the body */}
-      <Header/>
       <body className={`${roboto.variable} antialiased`}>
-        {children}
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
-      <Footer/>
     </html>
   );
 }

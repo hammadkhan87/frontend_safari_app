@@ -247,45 +247,16 @@ const GetInspiredSection = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
           </div>
         </div>
-        <div className="flex flex-row justify-between  p-6 mt-18">
-          <div>
-            <button className="w-full max-w-xs px-6 py-3 bg-white text-[#465b2d] border-2 border-[#465b2d] font-semibold rounded-lg shadow-md hover:bg-[#465b2d] hover:text-white transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
-              SAFARIS
-            </button>
-          </div>
-
-          <div>
-             <button className="w-full max-w-xs px-6 py-3 bg-white text-[#465b2d] border-2 border-[#465b2d] font-semibold rounded-lg shadow-md hover:bg-[#465b2d] hover:text-white transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
-                            KILIMANJARO
-
-            </button>
-            
-          </div>
-
-          <div>
-             <button className="w-full max-w-xs px-6 py-3 bg-white text-[#465b2d] border-2 border-[#465b2d] font-semibold rounded-lg shadow-md hover:bg-[#465b2d] hover:text-white transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
-                            ZANZIBAR
-
-            </button>
-            
-          </div>
-
-          <div>
-             <button className="w-full max-w-xs px-6 py-3 bg-white text-[#465b2d] border-2 border-[#465b2d] font-semibold rounded-lg shadow-md hover:bg-[#465b2d] hover:text-white transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
-                            NATIONAL PARKS
-
-            </button>
-            
-          </div>
-
-          <div>
-             <button className="w-full max-w-xs px-6 py-3 bg-white text-[#465b2d] border-2 border-[#465b2d] font-semibold rounded-lg shadow-md hover:bg-[#465b2d] hover:text-white transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
-                            HONEYMOON
-
-            </button>
-           
-          </div>
-        </div>
+        <div className="flex flex-wrap justify-center gap-4 lg:justify-between p-6 mt-18">
+  {["SAFARIS", "KILIMANJARO", "ZANZIBAR", "NATIONAL PARKS", "HONEYMOON"].map((label, i) => (
+    <button
+      key={i}
+      className="w-full sm:w-[45%] md:w-[30%] lg:w-[18%] px-6 py-3 bg-white text-[#465b2d] border-2 border-[#465b2d] font-semibold rounded-lg shadow-md hover:bg-[#465b2d] hover:text-white transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl"
+    >
+      {label}
+    </button>
+  ))}
+</div>
       </div>
     </section>
   );
