@@ -588,6 +588,20 @@ const mainNavItems = [
           <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
             
             {/* Currency and Language */}
+
+              <div className="flex items-center space-x-4 md:space-x-6">
+
+              <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-3 py-1.5">
+                <FaGlobe className="text-sm text-white" />
+                <select className="bg-transparent border-none outline-none text-white cursor-pointer text-sm">
+                  <option value="en">EN</option>
+                  <option value="sw">SW</option>
+                  <option value="fr">FR</option>
+                </select>
+              </div>
+            </div>
+
+              
             <div className="flex items-center space-x-4 md:space-x-6">
               <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm">
               {/* Phone Number */}

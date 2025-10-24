@@ -6,17 +6,21 @@ import TanzaniaWonders from "@/app/_components/home/TanzaniaWonders";
 import TestimonialSection from "@/app/_components/home/TestimonialSection";
 import WhyChooseUs from "@/app/_components/home/WhyChooseUs";
 import Image from "next/image";
+import FAQSection from "./_components/home/FAQSection";
+import TanzaniaParks from "./_components/home/TanzaniaParks";
 
 export default function Home() {
   return (
    <>
   
 <HeroSection/>
+<TanzaniaParks/>
 <TanzaniaWonders/>
 <TanzaniaVacation/>
 <TestimonialSection/>
 <WhyChooseUs/>
 <GetInspiredSection/>
+<FAQSection/>
 <TailorMadeTrip/>
 
    </>

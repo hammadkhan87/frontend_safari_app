@@ -127,13 +127,14 @@ const TwoCardLayout = () => {
                       <div className="flex items-center justify-between group hover:bg-white/60 p-3 rounded-lg transition-all duration-300">
                         <span className="font-bold text-slate-700 text-lg">USA:</span>
                         <span className="text-xl font-semibold text-[#465b2d] group-hover:text-[#3a4a24] transition-colors duration-300">
-                          +1 518 654 1159
+                          +255 0767140150
+
                         </span>
                       </div>
                       <div className="flex items-center justify-between group hover:bg-white/60 p-3 rounded-lg transition-all duration-300">
                         <span className="font-bold text-slate-700 text-lg">UK:</span>
                         <span className="text-xl font-semibold text-[#465b2d] group-hover:text-[#3a4a24] transition-colors duration-300">
-                          +44 20 3808 4213
+                          +255 0767140150
                         </span>
                       </div>
                     </div>
