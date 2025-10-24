@@ -593,12 +593,12 @@ const mainNavItems = [
               {/* Phone Number */}
               <div className="flex items-center space-x-2">
                 <FaPhone className="text-yellow-300 text-sm" />
-                <span className="font-medium">+255 123 456 789</span>
+                <span className="font-medium">+255 0767140150</span>
               </div>
               
               {/* Email */}
               <div className="flex items-center space-x-2">
-                <span className="font-medium">info@asiliexplorer.com</span>
+                <span className="font-medium">hello@asiliexplorer.com</span>
               </div>
             </div>
             </div>

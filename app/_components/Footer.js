@@ -24,7 +24,7 @@ const Footer = () => {
             <svg className="w-6 h-6 mr-2 text-[#333333]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502.95l-1.498 4.493a1 1 0 01-.502.95m9.188-3.21c-.778.347-1.352.977-1.684 1.768a4.2 4.2 0 00-.224.268m1.98 5.508a12.063 12.063 0 01-4.474-4.474 12.063 12.063 0 014.474 4.474z" />
             </svg>
-            <span className="text-xl font-bold">+1 518 634 1139</span>
+            <span className="text-xl font-bold">+255 0767140150</span>
           </div>
 
           {/* Awards */}
