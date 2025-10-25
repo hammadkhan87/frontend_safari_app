@@ -550,7 +550,7 @@ const PackageListing = () => {
                 onToggle={() => toggleSection('startingFrom')}
               >
                 <div className="space-y-3">
-                  {filterOptions.startingFrom.map(option => (
+                  {filterOptions.startingFrom?.map(option => (
                     <label key={option.id} className="flex items-center space-x-3 group cursor-pointer">
                       <div className="relative">
                         <input
@@ -582,7 +582,7 @@ const PackageListing = () => {
                 onToggle={() => toggleSection('comfortLevel')}
               >
                 <div className="space-y-3">
-                  {filterOptions.comfortLevel.map(option => (
+                  {filterOptions.comfortLevels.map(option => (
                     <label key={option.id} className="flex items-center space-x-3 group cursor-pointer">
                       <div className="relative">
                         <input
@@ -614,7 +614,7 @@ const PackageListing = () => {
                 onToggle={() => toggleSection('tourType')}
               >
                 <div className="space-y-3">
-                  {filterOptions.tourType.map(option => (
+                  {filterOptions.tourTypes.map(option => (
                     <label key={option.id} className="flex items-center space-x-3 group cursor-pointer">
                       <div className="relative">
                         <input
@@ -646,7 +646,7 @@ const PackageListing = () => {
                 onToggle={() => toggleSection('safariType')}
               >
                 <div className="space-y-3">
-                  {filterOptions.safariType.map(option => (
+                  {filterOptions.safariTypes.map(option => (
                     <label key={option.id} className="flex items-center space-x-3 group cursor-pointer">
                       <div className="relative">
                         <input
