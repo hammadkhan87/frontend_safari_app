@@ -8,6 +8,7 @@ import WhyChooseUs from "@/app/_components/home/WhyChooseUs";
 import Image from "next/image";
 import FAQSection from "./_components/home/FAQSection";
 import TanzaniaParks from "./_components/home/TanzaniaParks";
+import TanzaniaToursSlider from "./_components/home/TanzaniaToursSlider";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
 <TanzaniaVacation/>
 <TestimonialSection/>
 <WhyChooseUs/>
+<TanzaniaToursSlider/>
 <GetInspiredSection/>
 <FAQSection/>
 <TailorMadeTrip/>

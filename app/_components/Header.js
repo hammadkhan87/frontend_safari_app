@@ -133,7 +133,7 @@ const Header = () => {
    
 <div 
 ref={discoverPanelRef}
-className="absolute top-full -left-50 w-[950px] mt-4 rounded-xl z-50 
+className="absolute top-full -left-50 w-[950px] mt-8 rounded-xl z-50 
            bg-white/60 backdrop-blur-xl border border-white/50 shadow-2xl"
 onMouseLeave={() => setShowItineraryPanel(false)} 
 
@@ -162,7 +162,7 @@ onMouseLeave={() => setShowItineraryPanel(false)}
               <Link
                 key={destination.id}
                 href={`/destinations/${destination.id}`}
-                className="group relative block rounded-sm overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.03]"
+                className="group relative block rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.03]"
                 onClick={closeAllDropdowns}
               >
                 {/* Background Image with Overlay */}
@@ -286,7 +286,7 @@ const DiscoverTanzaniaPanel = () => {
    
 <div 
   ref={discoverPanelRef}
-className="absolute top-full -right-50 w-[950px] mt-4 rounded-xl z-50 
+className="absolute top-full -right-50 w-[950px] mt-8 rounded-xl z-50 
            bg-white/60 backdrop-blur-xl border border-white/50 shadow-2xl"
 onMouseLeave={() => setShowDiscoverPanel(false)}
 >
@@ -314,7 +314,7 @@ onMouseLeave={() => setShowDiscoverPanel(false)}
               <Link
                 key={destination.id}
                 href={`/destinations/${destination.id}`}
-                className="group relative block rounded-sm overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.03]"
+                className="group relative block rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.03]"
                 onClick={closeAllDropdowns}
               >
                 {/* Background Image with Overlay */}

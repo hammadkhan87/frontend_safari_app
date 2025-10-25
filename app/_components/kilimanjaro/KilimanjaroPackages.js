@@ -170,7 +170,7 @@ const KilimanjaroPackages = () => {
         );
 
   return (
-    <section className="pb-20 bg-white">
+    <section className="pb-20">
       <div className="relative text-center mb-16 py-16  overflow-hidden">
         {/* Background Image */}
         <div
@@ -204,7 +204,7 @@ const KilimanjaroPackages = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  bg-white">
         {/* Header Section */}
         {/* <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -249,15 +249,13 @@ const KilimanjaroPackages = () => {
           {filteredRoutes.map((route) => (
             <div
               key={route.id}
-              className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden cursor-pointer border border-gray-100"
+              className="relative group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden cursor-pointer border border-gray-100"
               onMouseEnter={() => setHoveredCard(route.id)}
               onMouseLeave={() => setHoveredCard(null)}
             >
-              <div className="flex flex-col md:flex-row h-60">
-                {" "}
-                {/* Reduced height */}
+              <div className="flex flex-col md:flex-row h-auto md:h-60 w-full max-w-5xl mx-auto rounded-lg overflow-hidden shadow-md bg-white group transition-all duration-300 hover:shadow-lg">
                 {/* Image Section */}
-                <div className="relative md:w-2/5 h-40 md:h-full overflow-hidden">
+                <div className="relative w-full md:w-2/5 h-48 md:h-auto overflow-hidden">
                   <img
                     src={route.image}
                     alt={route.title}
@@ -273,23 +271,11 @@ const KilimanjaroPackages = () => {
                   </div>
 
                   {/* Success Rate */}
-                  <div className="absolute bottom-3 left-3 bg-black/80 text-white px-2 py-1 rounded text-xs font-medium backdrop-blur-sm">
+                  <div className="absolute bottom-3 left-3 bg-black/70 text-white px-2 py-1 rounded text-xs font-medium backdrop-blur-sm">
                     {route.successRate} Success
                   </div>
-
-                  {/* Difficulty Badge */}
-                  {/* <div
-                    className={`absolute top-3 right-3 px-2 py-1 rounded text-xs font-semibold text-white shadow-lg ${
-                      route.difficulty === "Hard"
-                        ? "bg-red-500"
-                        : route.difficulty === "Medium-Hard"
-                        ? "bg-orange-500"
-                        : "bg-green-500"
-                    }`}
-                  >
-                    {route.difficulty}
-                  </div> */}
                 </div>
+
                 {/* Content Section */}
                 <div className="flex-1 p-4 flex flex-col justify-between">
                   <div className="space-y-2">
@@ -364,44 +350,9 @@ const KilimanjaroPackages = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16 bg-gradient-to-r from-[#465b2d] to-[#3a4a24] rounded-2xl p-12 text-white">
-          <h3 className="text-3xl font-bold mb-4">
-            Ready to Conquer Kilimanjaro?
-          </h3>
-          <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-            Get expert advice from our Kilimanjaro specialists and start
-            planning your adventure today.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-white text-[#465b2d] px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors duration-300 font-bold text-lg">
-              Speak to Our Expert
-            </button>
-            <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition-colors duration-300 font-bold text-lg">
-              Get Detailed Itinerary
-            </button>
-          </div>
-        </div>
-
+       
         {/* Trust Indicators */}
-        <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-          {[
-            { icon: "🏆", number: "15+", text: "Years Experience" },
-            { icon: "⭐", number: "95%", text: "Success Rate" },
-            { icon: "👨‍⚕️", number: "100%", text: "Safety Record" },
-            { icon: "🌍", number: "2,000+", text: "Happy Climbers" },
-          ].map((badge, index) => (
-            <div
-              key={index}
-              className="bg-white p-6 rounded-2xl shadow-lg border border-gray-200"
-            >
-              <div className="text-3xl mb-3">{badge.icon}</div>
-              <div className="text-2xl font-bold text-[#465b2d] mb-1">
-                {badge.number}
-              </div>
-              <p className="text-gray-700 font-medium">{badge.text}</p>
-            </div>
-          ))}
-        </div>
+        
       </div>
     </section>
   );

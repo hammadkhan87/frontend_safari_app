@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
   };
 
   return (
-    <div className="w-full flex justify-between bg-gradient-to-br from-slate-50 to-slate-100 py-16 px-4">
+    <div className="w-full flex justify-between flex-wrap bg-gradient-to-br from-slate-50 to-slate-100 py-16 px-4">
       <div className="max-w-full mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">

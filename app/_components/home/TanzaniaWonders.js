@@ -69,6 +69,14 @@ const TanzaniaWonders = () => {
       price: "From $3,215 USD",
       duration: "10 Days",
       image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    },
+      {
+      id: 9,
+      title: "11 DAYS SAFARI + ZANZIBAR",
+      description: "Best of both worlds: Wildlife and tropical beaches",
+      price: "From $2,934 USD",
+      duration: "11 Days",
+      image: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=871",
     }
   ];
 
@@ -87,7 +95,7 @@ const TanzaniaWonders = () => {
         </div>
 
         {/* Packages Grid - Wider cards with full background images */}
-<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+<div className="grid grid-cols-1 md:grid-cols-2 px-20 xl:grid-cols-3 gap-6">
   {packages.map((pkg) => (
     <div 
       key={pkg.id}
