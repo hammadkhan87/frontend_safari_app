@@ -74,310 +74,560 @@ const Header = () => {
 
 
   // Sample Itineraries Panel Component - Compact Version
-  const SampleItinerariesPanel = () => {
-     const destinations = [
-      {
-        id: 1,
-        name: "Serengeti National Park",
-        image: "https://plus.unsplash.com/premium_photo-1661962430536-117f0fead8b3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1013",
-        type: "National Park",
-        highlights: ["Great Migration", "Big Five", "Wildlife"]
-      },
-      {
-        id: 2,
-        name: "Ngorongoro Crater", 
-        image: "https://plus.unsplash.com/premium_photo-1661923846360-62f8754cdd06?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=901",
-        type: "Conservation Area",
-        highlights: ["Crater Safari", "Dense Wildlife", "UNESCO"]
-      },
-      {
-        id: 3,
-        name: "Lake Manyara",
-        image: "https://images.unsplash.com/photo-1660638401389-1afc53689a1a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=835",
-        type: "National Park",
-        highlights: ["Tree Lions", "Flamingos", "Lake Views"]
-      },
-      {
-        id: 4,
-        name: "Tarangire National Park",
-        image: "https://images.unsplash.com/photo-1700221824708-012001e5ccb8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
-        type: "National Park",
-        highlights: ["Elephants", "Baobabs", "Birding"]
-      },
-      {
-        id: 5,
-        name: "Arusha National Park",
-        image: "https://images.unsplash.com/photo-1707410437019-40c82e3a417f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
-        type: "National Park",
-        highlights: ["Mount Meru", "Canopy Walk", "Easy Access"]
-      },
-      {
-        id: 6,
-        name: "Mount Kilimanjaro",
-        image: "https://plus.unsplash.com/premium_photo-1661895052895-c7163da980cc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
-        type: "Mountain",
-        highlights: ["Summit", "Climbing Routes", "Views"]
-      }
-    ];
+//   const SampleItinerariesPanel = () => {
+//      const destinations = [
+//       {
+//         id: 1,
+//         name: "Serengeti National Park",
+//         image: "https://plus.unsplash.com/premium_photo-1661962430536-117f0fead8b3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1013",
+//         type: "National Park",
+//         highlights: ["Great Migration", "Big Five", "Wildlife"]
+//       },
+//       {
+//         id: 2,
+//         name: "Ngorongoro Crater", 
+//         image: "https://plus.unsplash.com/premium_photo-1661923846360-62f8754cdd06?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=901",
+//         type: "Conservation Area",
+//         highlights: ["Crater Safari", "Dense Wildlife", "UNESCO"]
+//       },
+//       {
+//         id: 3,
+//         name: "Lake Manyara",
+//         image: "https://images.unsplash.com/photo-1660638401389-1afc53689a1a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=835",
+//         type: "National Park",
+//         highlights: ["Tree Lions", "Flamingos", "Lake Views"]
+//       },
+//       {
+//         id: 4,
+//         name: "Tarangire National Park",
+//         image: "https://images.unsplash.com/photo-1700221824708-012001e5ccb8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
+//         type: "National Park",
+//         highlights: ["Elephants", "Baobabs", "Birding"]
+//       },
+//       {
+//         id: 5,
+//         name: "Arusha National Park",
+//         image: "https://images.unsplash.com/photo-1707410437019-40c82e3a417f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
+//         type: "National Park",
+//         highlights: ["Mount Meru", "Canopy Walk", "Easy Access"]
+//       },
+//       {
+//         id: 6,
+//         name: "Mount Kilimanjaro",
+//         image: "https://plus.unsplash.com/premium_photo-1661895052895-c7163da980cc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
+//         type: "Mountain",
+//         highlights: ["Summit", "Climbing Routes", "Views"]
+//       }
+//     ];
 
-    return (
-      // <div 
-      //   ref={discoverPanelRef}
-      //   className="absolute top-full -right-5 w-[950px] bg-white/95 backdrop-blur-xl shadow-2xl border border-white/20 rounded-2xl z-50"
-      //   onMouseLeave={() => setShowDiscoverPanel(false)}
-      //   style={{
-      //     background: 'linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.98) 100%)',
-      //     boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1)'
-      //   }}
-      // >
+//     return (
+//       // <div 
+//       //   ref={discoverPanelRef}
+//       //   className="absolute top-full -right-5 w-[950px] bg-white/95 backdrop-blur-xl shadow-2xl border border-white/20 rounded-2xl z-50"
+//       //   onMouseLeave={() => setShowDiscoverPanel(false)}
+//       //   style={{
+//       //     background: 'linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.98) 100%)',
+//       //     boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1)'
+//       //   }}
+//       // >
    
-<div 
-ref={discoverPanelRef}
-className="absolute top-full -left-50 w-[950px] mt-8 rounded-xl z-50 
-           bg-white/60 backdrop-blur-xl border border-white/50 shadow-2xl"
-onMouseLeave={() => setShowItineraryPanel(false)} 
+// <div 
+// ref={discoverPanelRef}
+// className="absolute top-full -left-50 w-[950px] mt-8 rounded-xl z-50 
+//            bg-white/60 backdrop-blur-xl border border-white/50 shadow-2xl"
+// onMouseLeave={() => setShowItineraryPanel(false)} 
 
->
-        <div className="p-6">
-          {/* Header */}
-          <div className="flex justify-between items-center mb-6">
-            <div>
-              <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-[#465b2d] bg-clip-text text-transparent mb-2">
-                View all sample itineraries
-              </h2>
-              <p className="text-gray-600 text-sm font-light">Explore Africa's most breathtaking destinations</p>
-            </div>
-            <Link 
-              href="/tanzania"
-              className="bg-gradient-to-r from-[#465b2d] to-[#3a4a24] text-white px-4 py-2 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold hover:scale-105 transform"
+// >
+//         <div className="p-6">
+//           {/* Header */}
+//           <div className="flex justify-between items-center mb-6">
+//             <div>
+//               <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-[#465b2d] bg-clip-text text-transparent mb-2">
+//                 View all sample itineraries
+//               </h2>
+//               <p className="text-gray-600 text-sm font-light">Explore Africa's most breathtaking destinations</p>
+//             </div>
+//             <Link 
+//               href="/tanzania"
+//               className="bg-gradient-to-r from-[#465b2d] to-[#3a4a24] text-white px-4 py-2 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold hover:scale-105 transform"
+//               onClick={closeAllDropdowns}
+//             >
+//               View All →
+//             </Link>
+//           </div>
+
+//           {/* Destination Cards Grid - 3 columns */}
+//           <div className="grid grid-cols-3 gap-4">
+//             {destinations.map((destination) => (
+//               <Link
+//                 key={destination.id}
+//                 href={`/destinations/${destination.id}`}
+//                 className="group relative block rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.03]"
+//                 onClick={closeAllDropdowns}
+//               >
+//                 {/* Background Image with Overlay */}
+//                 <div className="relative h-40 overflow-hidden">
+//                   <img 
+//                     src={destination.image} 
+//                     alt={destination.name}
+//                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+//                   />
+                  
+//                   {/* Gradient Overlay */}
+//                   <div className="absolute"></div>
+                  
+//                   {/* Content Overlay */}
+//                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+//                     {/* Type Badge */}
+//                     <div className="mb-2">
+//                       <span className="bg-[#465b2d] text-white px-2 py-1 rounded-full text-xs font-semibold shadow-lg">
+//                         {destination.type}
+//                       </span>
+//                     </div>
+                    
+//                     {/* Destination Name */}
+//                     <h3 className="text-lg font-bold leading-tight">
+//                       {destination.name}
+//                     </h3>
+                    
+//                     {/* Highlights - Show on hover */}
+//                     {/* <div className="flex flex-wrap gap-1 mt-2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 delay-100">
+//                       {destination.highlights.slice(0, 2).map((highlight, index) => (
+//                         <span 
+//                           key={index}
+//                           className="bg-white/20 backdrop-blur-sm text-white px-2 py-1 rounded text-xs font-medium"
+//                         >
+//                           {highlight}
+//                         </span>
+//                       ))}
+//                     </div> */}
+//                   </div>
+
+//                   {/* Hover Arrow */}
+//                   <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300 delay-200">
+//                     <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
+//                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+//                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+//                       </svg>
+//                     </div>
+//                   </div>
+//                 </div>
+
+//                 {/* Bottom Glow Effect */}
+//                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#465b2d] to-[#3a4a24] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+//               </Link>
+//             ))}
+//           </div>
+
+//           {/* Bottom CTA */}
+         
+//         </div>
+//       </div>
+//     );
+//   };
+const SampleItinerariesPanel = () => {
+  const destinations = [
+    {
+      id: 1,
+      name: "Safaris",
+      image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      type: "Safari",
+      slug: "/packages"
+    },
+    {
+      id: 2,
+      name: "Safari + Zanzibar",
+      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      type: "Combo",
+      slug: "/packages"
+    },
+    {
+      id: 3,
+      name: "Zanzibar",
+      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      type: "Beach",
+      slug: "/zanzibar"
+    },
+    {
+      id: 4,
+      name: "Kilimanjaro",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      type: "Mountain",
+      slug: "/kilimanjaro"
+    },
+    {
+      id: 5,
+      name: "Honeymoon Trips",
+      image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      type: "Romantic",
+      slug: "/packages"
+    },
+    {
+      id: 6,
+      name: "Family-Friendly Tours",
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      type: "Family",
+      slug: "/packages"
+    },
+    
+  ];
+
+  return (
+    <div 
+      ref={discoverPanelRef}
+      className="absolute top-full -left-50 w-[950px] mt-8 rounded-xl z-50 
+                 bg-white/60 backdrop-blur-xl border border-white/50 shadow-2xl"
+      onMouseLeave={() => setShowItineraryPanel(false)}
+    >
+      <div className="p-6">
+        {/* Header */}
+        <div className="flex justify-between items-center mb-6">
+          <div>
+            <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-[#465b2d] bg-clip-text text-transparent mb-2">
+              View all sample itineraries
+            </h2>
+            <p className="text-gray-600 text-sm font-light">Explore Africa's most breathtaking destinations</p>
+          </div>
+          <Link 
+            href="/tanzania"
+            className="bg-gradient-to-r from-[#465b2d] to-[#3a4a24] text-white px-4 py-2 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold hover:scale-105 transform"
+            onClick={closeAllDropdowns}
+          >
+            View All →
+          </Link>
+        </div>
+
+        {/* Destination Cards Grid - 3 columns (will show 8 items: 3 + 3 + 2) */}
+        <div className="grid grid-cols-3 gap-4">
+          {destinations.map((destination) => (
+            <Link
+              key={destination.id}
+              href={destination.slug}
+              className="group relative block rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.03]"
               onClick={closeAllDropdowns}
             >
-              View All →
-            </Link>
-          </div>
-
-          {/* Destination Cards Grid - 3 columns */}
-          <div className="grid grid-cols-3 gap-4">
-            {destinations.map((destination) => (
-              <Link
-                key={destination.id}
-                href={`/destinations/${destination.id}`}
-                className="group relative block rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.03]"
-                onClick={closeAllDropdowns}
-              >
-                {/* Background Image with Overlay */}
-                <div className="relative h-40 overflow-hidden">
-                  <img 
-                    src={destination.image} 
-                    alt={destination.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  
-                  {/* Gradient Overlay */}
-                  <div className="absolute"></div>
-                  
-                  {/* Content Overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                    {/* Type Badge */}
-                    <div className="mb-2">
-                      <span className="bg-[#465b2d] text-white px-2 py-1 rounded-full text-xs font-semibold shadow-lg">
-                        {destination.type}
-                      </span>
-                    </div>
-                    
-                    {/* Destination Name */}
-                    <h3 className="text-lg font-bold leading-tight">
-                      {destination.name}
-                    </h3>
-                    
-                    {/* Highlights - Show on hover */}
-                    {/* <div className="flex flex-wrap gap-1 mt-2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 delay-100">
-                      {destination.highlights.slice(0, 2).map((highlight, index) => (
-                        <span 
-                          key={index}
-                          className="bg-white/20 backdrop-blur-sm text-white px-2 py-1 rounded text-xs font-medium"
-                        >
-                          {highlight}
-                        </span>
-                      ))}
-                    </div> */}
+              {/* Background Image with Overlay */}
+              <div className="relative h-40 overflow-hidden">
+                <img 
+                  src={destination.image.trim()} 
+                  alt={destination.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  onError={(e) => {
+                    e.target.src = "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
+                  }}
+                />
+                
+                {/* Content Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                  {/* Type Badge */}
+                  <div className="mb-2">
+                    <span className="bg-[#465b2d] text-white px-2 py-1 rounded-full text-xs font-semibold shadow-lg">
+                      {destination.type}
+                    </span>
                   </div>
-
-                  {/* Hover Arrow */}
-                  <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300 delay-200">
-                    <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
-                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </div>
-                  </div>
+                  
+                  {/* Destination Name */}
+                  <h3 className="text-lg font-bold leading-tight">
+                    {destination.name}
+                  </h3>
                 </div>
 
-                {/* Bottom Glow Effect */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#465b2d] to-[#3a4a24] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </Link>
-            ))}
-          </div>
+                {/* Hover Arrow */}
+                <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300 delay-200">
+                  <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
 
-          {/* Bottom CTA */}
-         
+              {/* Bottom Glow Effect */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#465b2d] to-[#3a4a24] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </Link>
+          ))}
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
+// const DiscoverTanzaniaPanel = () => {
+//     const destinations = [
+//       {
+//         id: 1,
+//         name: "Serengeti National Park",
+//         image: "https://plus.unsplash.com/premium_photo-1661962430536-117f0fead8b3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1013",
+//         type: "National Park",
+//         highlights: ["Great Migration", "Big Five", "Wildlife"]
+//       },
+//       {
+//         id: 2,
+//         name: "Ngorongoro Crater", 
+//         image: "https://plus.unsplash.com/premium_photo-1661923846360-62f8754cdd06?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=901",
+//         type: "Conservation Area",
+//         highlights: ["Crater Safari", "Dense Wildlife", "UNESCO"]
+//       },
+//       {
+//         id: 3,
+//         name: "Lake Manyara",
+//         image: "https://images.unsplash.com/photo-1660638401389-1afc53689a1a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=835",
+//         type: "National Park",
+//         highlights: ["Tree Lions", "Flamingos", "Lake Views"]
+//       },
+//       {
+//         id: 4,
+//         name: "Tarangire National Park",
+//         image: "https://images.unsplash.com/photo-1700221824708-012001e5ccb8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
+//         type: "National Park",
+//         highlights: ["Elephants", "Baobabs", "Birding"]
+//       },
+//       {
+//         id: 5,
+//         name: "Arusha National Park",
+//         image: "https://images.unsplash.com/photo-1707410437019-40c82e3a417f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
+//         type: "National Park",
+//         highlights: ["Mount Meru", "Canopy Walk", "Easy Access"]
+//       },
+//       {
+//         id: 6,
+//         name: "Mount Kilimanjaro",
+//         image: "https://plus.unsplash.com/premium_photo-1661895052895-c7163da980cc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
+//         type: "Mountain",
+//         highlights: ["Summit", "Climbing Routes", "Views"]
+//       }
+//     ];
+
+//     return (
+
+//       // <div 
+//       //   ref={discoverPanelRef}
+//       //   className="absolute top-full -right-5 w-[950px] bg-white/95 backdrop-blur-xl shadow-2xl border border-white/20 rounded-2xl z-50"
+//       //   onMouseLeave={() => setShowDiscoverPanel(false)}
+//       //   style={{
+//       //     background: 'linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.98) 100%)',
+//       //     boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1)'
+//       //   }}
+//       // >
+   
+// <div 
+//   ref={discoverPanelRef}
+// className="absolute top-full -right-50 w-[950px] mt-8 rounded-xl z-50 
+//            bg-white/60 backdrop-blur-xl border border-white/50 shadow-2xl"
+// onMouseLeave={() => setShowDiscoverPanel(false)}
+// >
+//         <div className="p-6">
+//           {/* Header */}
+//           <div className="flex justify-between items-center mb-6">
+//             <div>
+//               <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-[#465b2d] bg-clip-text text-transparent mb-2">
+//                 Discover Tanzania
+//               </h2>
+//               <p className="text-gray-600 text-sm font-light">Explore Africa's most breathtaking destinations</p>
+//             </div>
+//             <Link 
+//               href="/tanzania"
+//               className="bg-gradient-to-r from-[#465b2d] to-[#3a4a24] text-white px-4 py-2 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold hover:scale-105 transform"
+//               onClick={closeAllDropdowns}
+//             >
+//               View All →
+//             </Link>
+//           </div>
+
+//           {/* Destination Cards Grid - 3 columns */}
+//           <div className="grid grid-cols-3 gap-4">
+//             {destinations.map((destination) => (
+//               <Link
+//                 key={destination.id}
+//                 href={`/destinations/${destination.id}`}
+//                 className="group relative block rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.03]"
+//                 onClick={closeAllDropdowns}
+//               >
+//                 {/* Background Image with Overlay */}
+//                 <div className="relative h-40 overflow-hidden">
+//                   <img 
+//                     src={destination.image} 
+//                     alt={destination.name}
+//                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+//                   />
+                  
+//                   {/* Gradient Overlay */}
+//                   <div className="absolute"></div>
+                  
+//                   {/* Content Overlay */}
+//                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+//                     {/* Type Badge */}
+//                     <div className="mb-2">
+//                       <span className="bg-[#465b2d] text-white px-2 py-1 rounded-full text-xs font-semibold shadow-lg">
+//                         {destination.type}
+//                       </span>
+//                     </div>
+                    
+//                     {/* Destination Name */}
+//                     <h3 className="text-lg font-bold leading-tight">
+//                       {destination.name}
+//                     </h3>
+                    
+//                     {/* Highlights - Show on hover */}
+//                     {/* <div className="flex flex-wrap gap-1 mt-2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 delay-100">
+//                       {destination.highlights.slice(0, 2).map((highlight, index) => (
+//                         <span 
+//                           key={index}
+//                           className="bg-white/20 backdrop-blur-sm text-white px-2 py-1 rounded text-xs font-medium"
+//                         >
+//                           {highlight}
+//                         </span>
+//                       ))}
+//                     </div> */}
+//                   </div>
+
+//                   {/* Hover Arrow */}
+//                   <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300 delay-200">
+//                     <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
+//                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+//                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+//                       </svg>
+//                     </div>
+//                   </div>
+//                 </div>
+
+//                 {/* Bottom Glow Effect */}
+//                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#465b2d] to-[#3a4a24] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+//               </Link>
+//             ))}
+//           </div>
+
+//           {/* Bottom CTA */}
+         
+//         </div>
+//       </div>
+//     );
+//   }; 
 const DiscoverTanzaniaPanel = () => {
-    const destinations = [
-      {
-        id: 1,
-        name: "Serengeti National Park",
-        image: "https://plus.unsplash.com/premium_photo-1661962430536-117f0fead8b3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1013",
-        type: "National Park",
-        highlights: ["Great Migration", "Big Five", "Wildlife"]
-      },
-      {
-        id: 2,
-        name: "Ngorongoro Crater", 
-        image: "https://plus.unsplash.com/premium_photo-1661923846360-62f8754cdd06?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=901",
-        type: "Conservation Area",
-        highlights: ["Crater Safari", "Dense Wildlife", "UNESCO"]
-      },
-      {
-        id: 3,
-        name: "Lake Manyara",
-        image: "https://images.unsplash.com/photo-1660638401389-1afc53689a1a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=835",
-        type: "National Park",
-        highlights: ["Tree Lions", "Flamingos", "Lake Views"]
-      },
-      {
-        id: 4,
-        name: "Tarangire National Park",
-        image: "https://images.unsplash.com/photo-1700221824708-012001e5ccb8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
-        type: "National Park",
-        highlights: ["Elephants", "Baobabs", "Birding"]
-      },
-      {
-        id: 5,
-        name: "Arusha National Park",
-        image: "https://images.unsplash.com/photo-1707410437019-40c82e3a417f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
-        type: "National Park",
-        highlights: ["Mount Meru", "Canopy Walk", "Easy Access"]
-      },
-      {
-        id: 6,
-        name: "Mount Kilimanjaro",
-        image: "https://plus.unsplash.com/premium_photo-1661895052895-c7163da980cc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
-        type: "Mountain",
-        highlights: ["Summit", "Climbing Routes", "Views"]
-      }
-    ];
+  const destinations = [
+    {
+      id: 1,
+      name: "Serengeti National Park",
+      image: "https://plus.unsplash.com/premium_photo-1661962430536-117f0fead8b3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1013",
+      type: "National Park",
+      slug: "/parks/serengeti-national-park"
+    },
+    {
+      id: 2,
+      name: "Ngorongoro Crater",
+      image: "https://plus.unsplash.com/premium_photo-1661923846360-62f8754cdd06?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=901",
+      type: "Conservation Area",
+      slug: "/parks/ngorongoro-crater"
+    },
+    {
+      id: 3,
+      name: "Lake Manyara",
+      image: "https://images.unsplash.com/photo-1660638401389-1afc53689a1a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=835",
+      type: "National Park",
+      slug: "/parks/lake-manyara-national-park"
+    },
+    {
+      id: 4,
+      name: "Tarangire National Park",
+      image: "https://images.unsplash.com/photo-1700221824708-012001e5ccb8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
+      type: "National Park",
+      slug: "/parks/tarangire-national-park"
+    },
+    {
+      id: 5,
+      name: "Arusha National Park",
+      image: "https://images.unsplash.com/photo-1707410437019-40c82e3a417f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
+      type: "National Park",
+      slug: "/parks/arusha-national-park"
+    },
+   {
+  id: 6,
+  name: "Ruaha National Park",
+  image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
+  type: "National Park",
+  slug: "/parks/ruaha-national-park"
+}
+  ];
 
-    return (
+  return (
+    <div 
+      ref={discoverPanelRef}
+      className="absolute top-full -right-50 w-[950px] mt-8 rounded-xl z-50 
+                 bg-white/60 backdrop-blur-xl border border-white/50 shadow-2xl"
+      onMouseLeave={() => setShowDiscoverPanel(false)}
+    >
+      <div className="p-6">
+        {/* Header */}
+        <div className="flex justify-between items-center mb-6">
+          <div>
+            <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-[#465b2d] bg-clip-text text-transparent mb-2">
+              Discover Tanzania
+            </h2>
+            <p className="text-gray-600 text-sm font-light">Explore Africa's most breathtaking destinations</p>
+          </div>
+          <Link 
+            href="/parks"
+            className="bg-gradient-to-r from-[#465b2d] to-[#3a4a24] text-white px-4 py-2 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold hover:scale-105 transform"
+            onClick={closeAllDropdowns}
+          >
+            View All →
+          </Link>
+        </div>
 
-      // <div 
-      //   ref={discoverPanelRef}
-      //   className="absolute top-full -right-5 w-[950px] bg-white/95 backdrop-blur-xl shadow-2xl border border-white/20 rounded-2xl z-50"
-      //   onMouseLeave={() => setShowDiscoverPanel(false)}
-      //   style={{
-      //     background: 'linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.98) 100%)',
-      //     boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1)'
-      //   }}
-      // >
-   
-<div 
-  ref={discoverPanelRef}
-className="absolute top-full -right-50 w-[950px] mt-8 rounded-xl z-50 
-           bg-white/60 backdrop-blur-xl border border-white/50 shadow-2xl"
-onMouseLeave={() => setShowDiscoverPanel(false)}
->
-        <div className="p-6">
-          {/* Header */}
-          <div className="flex justify-between items-center mb-6">
-            <div>
-              <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-[#465b2d] bg-clip-text text-transparent mb-2">
-                Discover Tanzania
-              </h2>
-              <p className="text-gray-600 text-sm font-light">Explore Africa's most breathtaking destinations</p>
-            </div>
-            <Link 
-              href="/tanzania"
-              className="bg-gradient-to-r from-[#465b2d] to-[#3a4a24] text-white px-4 py-2 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold hover:scale-105 transform"
+        {/* Destination Cards Grid - 3 columns */}
+        <div className="grid grid-cols-3 gap-4">
+          {destinations.map((destination) => (
+            <Link
+              key={destination.id}
+              href={destination.slug}
+              className="group relative block rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.03]"
               onClick={closeAllDropdowns}
             >
-              View All →
-            </Link>
-          </div>
-
-          {/* Destination Cards Grid - 3 columns */}
-          <div className="grid grid-cols-3 gap-4">
-            {destinations.map((destination) => (
-              <Link
-                key={destination.id}
-                href={`/destinations/${destination.id}`}
-                className="group relative block rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.03]"
-                onClick={closeAllDropdowns}
-              >
-                {/* Background Image with Overlay */}
-                <div className="relative h-40 overflow-hidden">
-                  <img 
-                    src={destination.image} 
-                    alt={destination.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  
-                  {/* Gradient Overlay */}
-                  <div className="absolute"></div>
-                  
-                  {/* Content Overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                    {/* Type Badge */}
-                    <div className="mb-2">
-                      <span className="bg-[#465b2d] text-white px-2 py-1 rounded-full text-xs font-semibold shadow-lg">
-                        {destination.type}
-                      </span>
-                    </div>
-                    
-                    {/* Destination Name */}
-                    <h3 className="text-lg font-bold leading-tight">
-                      {destination.name}
-                    </h3>
-                    
-                    {/* Highlights - Show on hover */}
-                    {/* <div className="flex flex-wrap gap-1 mt-2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 delay-100">
-                      {destination.highlights.slice(0, 2).map((highlight, index) => (
-                        <span 
-                          key={index}
-                          className="bg-white/20 backdrop-blur-sm text-white px-2 py-1 rounded text-xs font-medium"
-                        >
-                          {highlight}
-                        </span>
-                      ))}
-                    </div> */}
+              {/* Background Image with Overlay */}
+              <div className="relative h-40 overflow-hidden">
+                <img 
+                  src={destination.image.trim()} 
+                  alt={destination.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  onError={(e) => {
+                    e.target.src = "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
+                  }}
+                />
+                
+                {/* Content Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                  {/* Type Badge */}
+                  <div className="mb-2">
+                    <span className="bg-[#465b2d] text-white px-2 py-1 rounded-full text-xs font-semibold shadow-lg">
+                      {destination.type}
+                    </span>
                   </div>
-
-                  {/* Hover Arrow */}
-                  <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300 delay-200">
-                    <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
-                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </div>
-                  </div>
+                  
+                  {/* Destination Name */}
+                  <h3 className="text-lg font-bold leading-tight">
+                    {destination.name}
+                  </h3>
                 </div>
 
-                {/* Bottom Glow Effect */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#465b2d] to-[#3a4a24] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </Link>
-            ))}
-          </div>
+                {/* Hover Arrow */}
+                <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300 delay-200">
+                  <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
 
-          {/* Bottom CTA */}
-         
+              {/* Bottom Glow Effect */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#465b2d] to-[#3a4a24] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </Link>
+          ))}
         </div>
       </div>
-    );
-  }; 
-
+    </div>
+  );
+};
 const mainNavItems = [
     { 
       name: 'SAMPLE ITINERARIES', 

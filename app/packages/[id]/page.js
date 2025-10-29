@@ -1001,12 +1001,12 @@ const PackageDetailsPage = () => {
                 Get a free, customized quote for your Tanzania adventure. Our experts are ready to design the perfect trip for you.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-[#465b2d] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#3a4a24] transition-colors duration-200 shadow-md">
+                <Link href="/travel-proposal" className="bg-[#465b2d] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#3a4a24] transition-colors duration-200 shadow-md">
                   MAKE A REQUEST
-                </button>
-                <button className="border-2 border-[#465b2d] text-[#465b2d] px-8 py-4 rounded-xl font-semibold hover:bg-[#465b2d] hover:text-white transition-colors duration-200">
+                </Link>
+                <Link href="/packages" className="border-2 border-[#465b2d] text-[#465b2d] px-8 py-4 rounded-xl font-semibold hover:bg-[#465b2d] hover:text-white transition-colors duration-200">
                   VIEW ALL PACKAGES
-                </button>
+                </Link>
               </div>
             </div>
           </div>

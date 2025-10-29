@@ -25,7 +25,7 @@ const TanzaniaWonders = () => {
 
         {/* Packages Grid - Wider cards with full background images */}
 <div className="grid grid-cols-1 md:grid-cols-2 px-20 xl:grid-cols-3 gap-6">
-  {packages.map((pkg) => (
+  {packages.slice(0,9).map((pkg) => (
     <Link href={`/packages/${pkg.id}`} key={pkg.id} passHref>
     <div 
       key={pkg.id}

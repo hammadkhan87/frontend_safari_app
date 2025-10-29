@@ -2,7 +2,7 @@
 "use client"
 import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
-import { FaBars, FaTimes, FaSearch, FaChevronDown, FaGlobe, FaStar, FaHeart, FaChevronLeft, FaChevronRight, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaBars, FaTimes, FaSearch, FaChevronDown, FaGlobe, FaStar, FaHeart, FaChevronLeft, FaChevronRight, FaMapMarkerAlt, FaCheck } from 'react-icons/fa';
 import { mockPackages, filterOptions } from '../../lib/mockData';
 
 const RangeSlider = ({ 
