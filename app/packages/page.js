@@ -312,9 +312,9 @@ const PackageListing = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const packagesPerPage = 10;
 
-  // const minDuration = Math.min(...mockPackages.map(pkg => pkg.duration));
+  const minDuration = Math.min(...mockPackages.map(pkg => pkg.duration));
   const maxDuration = Math.max(...mockPackages.map(pkg => pkg.duration));
-  // const minPrice = Math.min(...mockPackages.map(pkg => pkg.price));
+  const minPrice = Math.min(...mockPackages.map(pkg => pkg.price));
   const maxPrice = Math.max(...mockPackages.map(pkg => pkg.price));
 
   useEffect(() => {
