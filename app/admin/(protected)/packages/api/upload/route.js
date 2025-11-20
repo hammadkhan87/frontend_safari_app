@@ -1,4 +1,3 @@
-// app/admin/packages/api/upload/route.js
 import { writeFile } from 'fs/promises';
 import { join } from 'path';
 import { randomBytes } from 'crypto';
